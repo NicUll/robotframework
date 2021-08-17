@@ -4,14 +4,13 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${BROWSER}    gc
-${DOWNLOAD_DIRECTORY}    C:\\development
 
 
 *** Test Cases ***
 Change Default Download
     [Documentation]    Info about the test
     [Tags]    Smoke
-    Open Browser    https://blocket.se    gc
+    Open Browser    https://blocket.se    ${BROWSER}
     Click Button    //button[@id="accept-ufti"]
     Input Text    //input[@class="react-autosuggest__input"]    lego
     Submit Form
