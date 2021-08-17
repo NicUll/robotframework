@@ -2,6 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
+${Browser}    gc
 
 *** Keywords ***
 Begin Web Test
